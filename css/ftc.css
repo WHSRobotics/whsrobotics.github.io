@@ -1,0 +1,9 @@
+#ftc-logo {
+    width: 600px;
+}
+
+@media screen and (max-width: 810px) {
+    #ftc-logo {
+        width:  50%;
+    }
+}

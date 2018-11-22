@@ -1,0 +1,243 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden; 
+    width: 100%;
+    height: 50px;
+    background-color: #FFDD00; 
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: black; /* White text color */
+    text-align: center; /* Center the text */
+    font-size: 16px;
+    align-content: left;
+    padding: 17px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover{
+    background-color: black; 
+    color: white; 
+    transition: 0.1s;
+}
+
+.navbar.navbar-with-scroll-effect {
+    background-color: #FFDD0000;    /* Ones with scrolling effect start out transparent */ 
+    transition: 0.45s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.27, 0.99);
+}
+
+.navbar.navbar-with-scroll-effect a {
+    color: white;
+}
+
+/* Change color on hover/mouse-over */
+.navbar.navbar-with-scroll-effect a:hover {
+    background-color: #FD0; 
+    color: black; 
+    transition: 0.1s;
+}
+
+.current-page {
+    font-weight: 600;
+}
+
+.header {
+    text-align: center; /* center the text */
+    padding: 100px; /* some padding */
+    width: 100%;
+    background-color: black;
+    /*height: 300px;*/
+}
+
+.header.secondary {
+    margin-top: 50px; /*navbar height*/
+}
+
+.header.hero {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    /* This needs to be overriden by an id specific image. */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("/files/images/PLACEHOLDER.jpg"); */
+
+    /* Set a specific height */
+    height: 50%;
+    padding: 200px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+    
+}
+
+.header h1 {
+    font-size: 80px;
+    color: white;
+    font-family: 'Oswald', 'Arial', sans-serif;
+}
+.header.hero h1{
+    font-size: 100px;
+}
+
+.row-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.row-container.accent {
+    background-color: #FD0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.row-container h1 {
+    font-size: 42px;
+    /* padding-bottom: 0.1em; */
+    line-height: 1.5em;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: bold;
+}
+.row-container h2 {
+    font-size: 30px;
+    line-height: 1.5em;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    /*padding-bottom: 0.2em;*/
+}
+.row-container h3 {
+    font-size: 18px;
+    line-height: 2.0em;
+    padding-top: 0.2em;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5em;    
+    font-family: 'Roboto','Arial', sans-serif;
+}
+.row-container a {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Roboto','Arial', sans-serif;
+}
+.row-container a:link {
+    color: black;
+    text-decoration: underline;
+}
+.row-container a:visited {
+    color: black;
+}
+.row-container a:hover {
+    color: #fd0;
+}
+.row-container a:selected {
+    color: #fd0;
+}
+.row-container.accent a:hover{
+    color: #333;
+}
+.row-container a:selected {
+    color: #fd0;
+}
+ul, li {
+    list-style-type: square;
+}
+li{
+    margin-left: 1.6em;
+    /* All this is the same as row-container p */
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Roboto','Arial', sans-serif;
+}
+
+.row {     
+    display: flex;
+    flex-flow: row;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 1300px;
+
+}
+
+/* Main column */
+.column { 
+    width: 100%;
+}
+
+
+.column.right {
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding: 110px;
+    }
+    .header h1{
+        font-size: 50px;
+    }
+    .header.hero {
+        padding: 110px;
+    }
+    .header.hero h1 {
+        font-size: 80px;
+    }
+    
+    .row {
+        flex-flow: column;
+    }    
+
+    .column.right {
+        margin-left: 0px;
+        padding-top: 25px;
+    }
+    
+    .row.reverse {
+        flex-flow: column-reverse;
+    }
+    .row.reverse .column {
+        padding-top: 25px;
+    }
+    .row.reverse .column.right {
+        padding-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header.hero {
+        padding: 85px;
+    }
+    .header.hero h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        padding: 80px;
+    }
+    .header h1{
+        font-size: 40px;
+    }
+    .header.hero {
+        padding: 80px;
+    }
+    .header.hero h1 {
+        font-size: 40px;
+    }
+}
+
+
+
+

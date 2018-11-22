@@ -1,0 +1,17 @@
+#social-media-desktop {
+    display: inline-block;
+}
+#social-media-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    
+    #social-media-desktop {
+        display: none;
+    }
+    #social-media-mobile {
+        display: inline-block;
+    }
+    
+}
