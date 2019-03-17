@@ -18,6 +18,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta name="theme-color" content="#000000">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffdd00">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Makes navbar menu work when on small display-->
+    <script>
+        $(document).ready(function(){
+            $("#menuButton").click(function(){
+                $(".navbar").toggleClass("responsive");
+                $(".header").toggleClass("top-margin")
+            });
+        }); 
+    </script>
 </head>
 <body class="body page-index clearfix">
     
@@ -27,9 +39,12 @@
         <a href="/ftc.html">FTC</a>
         <a href="/sponsors.html" class="current-page">Sponsors</a>
         <a href="/about-us.html">About Us</a>
+        <a class="icon" id="menuButton">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     
-    <div class="header secondary">
+    <div class="header top-margin">
         <h1>Our Sponsors</h1>
     </div>
     
@@ -60,6 +75,9 @@
             
         </div>
     </div>
+    
+    <!--write the footer to the DOM. Probably not the best way to this, but it works-->
+    <script src="/footer.js"></script>
     
 </body>
 </html>

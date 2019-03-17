@@ -17,6 +17,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta name="theme-color" content="#000000">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffdd00">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Makes navbar menu work when on small display-->
+    <script>
+        $(document).ready(function(){
+            $("#menuButton").click(function(){
+                $(".navbar").toggleClass("responsive");
+                $(".header").toggleClass("top-margin")
+            });
+        }); 
+    </script>
 </head>
 <body class="body page-index clearfix">
     
@@ -27,9 +39,12 @@
         <a href="/ftc.html">FTC</a>
         <a href="/sponsors.html">Sponsors</a>
         <a href="/about-us.html">About Us</a>
+        <a class="icon" id="menuButton">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
         
-    <div class="header secondary hero" id="robocamp-hero">
+    <div class="header top-margin hero" id="robocamp-hero">
         <h1>RoboCamp</h1>
     </div>
     
@@ -37,16 +52,35 @@
         <div class="row">
             <div class="column">
                 <h2>What is RoboCamp?</h2>
-                <p>RoboCamp is a summer program designed for mature elementary, middle, and high school students.  Each 5-day camp offers 35 hours of intense study (8:00 AM - 3:00 PM). Summer RoboCamp participants will discover the concepts of science, technology, engineering and mathematics, through the medium of robotics competitions.  Participants will learn robot design, structure and programming, and build their own competition robot. The program encourages cooperative participation, hands-on robotics, basic teamwork and leadership skills that can be directly applied to the real world.</p>
+                <p>RoboCamp is a summer program designed for mature elementary, middle, and high school students. Each 5-day camp offers 35 hours of intense study (8:00 AM - 3:00 PM). Summer RoboCamp participants will discover the concepts of science, technology, engineering and mathematics, through the medium of robotics competitions.  Participants will learn robot design, structure and programming, and build their own competition robot. The program encourages cooperative participation, hands-on robotics, basic teamwork and leadership skills that can be directly applied to the real world.</p>
             </div>
             <div class="column right" id="camps">
                 <h2>Camps:</h2>
                 <ul>
-                    <li>LEGO RoboCamp - Week 1</li>
-                    <li>VEX RoboCamp - Week 2</li>
-                    <li>Advanced LEGO RoboCamp - Week 3</li>
+                    <li>LEGO RoboCamp - Week 1 - June 17th-12st</li>
+                    <li>VEX RoboCamp - Week 2 - June 24th-28th</li>
+                    <li>Advanced LEGO RoboCamp - Week 3 - July 8th-12th</li>
                 </ul>
                 
+            </div>
+        </div>
+    </div>
+    <div class="row-container accent">
+        <div class="row">
+            <div class="column">
+                <h2>Pricing:</h2>
+                <ul>
+                    <li>Early Bird Discount (paid by May 1st) - $225</li>
+                    <li>Regular Registration - $275</li>
+                    <li>Group Rate (2 or more students) - $250/student</li>
+                </ul>
+            </div>
+            <div class="column right" id="camps">
+                <h2>How To Register</h2>
+                <ul>
+                    <li>A link to our registration sheet (with more information) will be posted here in ~1 week.</li>
+                    <li>We will also have online registration through the foundation coming soon!</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -55,7 +89,7 @@
             <div class="column" style="width: 100%;">
                 <h2>LEGO® RoboCamp</h2>
                 <p>For students aged 10 and up (grades 4 through 8).</p>
-                <a href="">Additional Infomation</a>
+                <p>Students will experience robotics through the LEGO® Mindstorms system.</p>
             </div>
             <div class="column right" style="width: 100%;">
                 <img src="files/images/lego-robocamp.jpg" style="width: 100%" alt="LEGO RoboCamp photo">
@@ -65,12 +99,12 @@
     <div class="row-container">
         <div class="row reverse">
             <div class="column" style="width: 100%;">
-                <img src="files/images/vex-robocamp.png" style="width: 100%;" alt="VEX RoboCamp photo">
+                <img src="files/images/vex-robocamp.jpg" style="width: 100%;" alt="VEX RoboCamp photo">
             </div>
             <div class="column right">
                 <h2>VEX® RoboCamp</h2>
                 <p>For students aged 12 and older (grades 4 and up), though we will accept students aged 10 and up.</p>
-                <a href="">Additional Infomation</a>
+                <p>Students will engage in STEM through the powerful metal VEX Robotics system.</p>
             </div>
         </div>
         
@@ -80,6 +114,9 @@
             
         </div>
     </div>
+    
+    <!--write the footer to the DOM. Probably not the best way to this, but it works-->
+    <script src="/footer.js"></script>
     
 </body>
 </html>

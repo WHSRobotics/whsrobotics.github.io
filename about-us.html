@@ -17,6 +17,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta name="theme-color" content="#000000">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffdd00">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Makes navbar menu work when on small display-->
+    <script>
+        $(document).ready(function(){
+            $("#menuButton").click(function(){
+                $(".navbar").toggleClass("responsive");
+                $(".header").toggleClass("top-margin")
+            });
+        }); 
+    </script>
 </head>
     
 <body class="body page-index clearfix">
@@ -27,9 +39,12 @@
         <a href="/ftc.html">FTC</a>
         <a href="/sponsors.html">Sponsors</a>
         <a href="/about-us.html"  class="current-page">About Us</a>
+        <a class="icon" id="menuButton">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     
-    <div class="header secondary">
+    <div class="header top-margin">
         <h1>About Us</h1>
     </div>
     
@@ -92,20 +107,21 @@
                 This shows version w/ or wo/ links depending on platform.-->
             <div class="column" id="social-media-desktop">
                 <h2>Social Media:</h2>
-                <p>Club Facebook Page: <a href="https://www.facebook.com/whitneyhighschoolrobotics/">https://www.facebook.com/whitneyhighschoolrobotics/</a></p>
-                <p>Team Facebook Page: <a href="https://www.facebook.com/ftcteam542/">https://www.facebook.com/ftcteam542/</a></p>
-                <p>FTC Team Twitter: <a href="https://twitter.com/whsftc542?lang=en">https://twitter.com/whsftc542?lang=en</a></p>
+                <p>Club Facebook Page: <a href="https://www.facebook.com/whitneyhighschoolrobotics/" target="_blank">https://www.facebook.com/whitneyhighschoolrobotics/</a></p>
+                <p>Team Facebook Page: <a href="https://www.facebook.com/ftcteam542/" target="_blank">https://www.facebook.com/ftcteam542/</a></p>
+                <p>FTC Team Twitter: <a href="https://twitter.com/whsftc542?lang=en" target="_blank">https://twitter.com/whsftc542?lang=en</a></p>
             </div>
             <div class="column" id="social-media-mobile">
                 <h2>Social Media:</h2>
-                <p><a href="https://www.facebook.com/whitneyhighschoolrobotics/">Club Facebook Page</a></p>
-                <p><a href="https://www.facebook.com/ftcteam542/">FTC Team Facebook Page</a></p>
-                <p><a href="https://twitter.com/whsftc542?lang=en">FTC Team Twitter</a></p>
+                <p><a href="https://www.facebook.com/whitneyhighschoolrobotics/" target="_blank">Club Facebook Page</a></p>
+                <p><a href="https://www.facebook.com/ftcteam542/"  target="_blank">FTC Team Facebook Page</a></p>
+                <p><a href="https://twitter.com/whsftc542?lang=en"  target="_blank">FTC Team Twitter</a></p>
             </div>
         </div>
     </div>
     
-    
+    <!--write the footer to the DOM. Probably not the best way to this, but it works-->
+    <script src="/footer.js"></script>
     
     
 </body>
