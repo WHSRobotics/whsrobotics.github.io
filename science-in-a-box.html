@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>WHS Robotics - Science in a Box</title>
+    <meta name="description" content="WHS Robotics Club runs the Science in a Box program, a free hands-on program to allow elementary students to experience STEM in a fun, interactive, and engaging way!">
+    <meta name="keywords" content="WHS Robotics, whitney robotics, robo camp, robocamp, robotics camp, ftc team 542, ftc 542, science in a box">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117983650-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-117983650-2');
+    </script>
+    
+    <link rel="stylesheet" href="css/standardize.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <!--<link rel="stylesheet" href="css/ftc.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Roboto|Roboto+Condensed" rel="stylesheet">
+    <!--Favicons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffdd00">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--Makes navbar menu work when on small display-->
+    <script>
+        $(document).ready(function(){
+            $("#menuButton").click(function(){
+                $(".navbar").toggleClass("responsive");
+                $(".header").toggleClass("top-margin")
+            });
+        });
+    </script>
+</head>
+<body class="body page-index clearfix">
+    
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/robocamp.html">RoboCamp</a>
+        <a href="/ftc.html">FTC</a>
+        <a href="/sponsors.html">Sponsors</a>
+        <a href="/science-in-a-box.html" class = "current-page">Science in a Box</a>
+        <a href="/about-us.html">About Us</a>
+        <a class="icon" id="menuButton">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <div class="header top-margin">
+        <h1>Science in a Box</h1>
+    </div>
+    
+    <div class="row-container accent" style="background-color: #FFDD00; color:black; margin-top: 0px;">
+        <div class="row">
+            <div class="column" style="width: 256px; margin:auto;">
+                <p><img src="files/images/ScienceInABoxCerritosLibrarySignUpQRCode.png"></p>
+            </div>
+            <div class="column right" style="width: 100%;">
+                <p style="padding-bottom: 1em"> Sign Up for Science in a Box! Sign-Ups are currently open for the Octoberr Brushbot, November Cup Telephone, and the December Robotic Hand projects!
+                  Students will pick up their kits for their projects approximately one week before each Science in a Box session at Cerritos Library. Then, students will be able to join us during
+                  the planned session to learn about the science behind their kits and build along with us. Scan the QR code or click the link below to find out more!
+                </p><br>
+                <a href="https://tinyurl.com/WHSRoboticsScienceInABox">Sign Up HERE!</a>
+            </div>
+        </div>
+    </div>
+
+    <!--write the footer to the DOM. Probably not the best way to this, but it works-->
+    <script src="/footer.js"></script>
+    
+    
+</body>
+</html>
+</html>
