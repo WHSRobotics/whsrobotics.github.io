@@ -227,6 +227,15 @@ li{
     margin-left: 25px;
 }
 
+.column.gallery {
+    width: 75%;
+    margin-left: 10px
+}
+
+.column.gallery img {
+    margin-top: 5px;
+}
+
 @media screen and (max-width: 1200px) {
     .header.hero-large h1 {
         font-size: 80px;
@@ -265,6 +274,15 @@ li{
     .row.reverse .column.right {
         padding-top: 0px;
     }
+
+    .column.gallery {
+        margin: 0px;
+    }
+    
+    .column .gallery img {
+        margin: 0px
+    }
+    
 
 }
 
