@@ -1,3 +1,7 @@
 #robocamp-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("/files/images/hand-on-robot2000px.jpg");
 }
+
+#rpex-hero {
+    background-color: #072632;
+}
